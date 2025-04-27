@@ -14,3 +14,28 @@ new members: "Cyborg" , "Shazam" , "Hawkgirl" , "Martian Manhunter", "Green Arro
 Your task is to write Python code to perform these operations on the "justice_league" list. Display the list at each step to observe
 the changes.
 """
+justice_league = ["Superman", "Batman", "Wonder Woman", "Flash", "Aquaman", "Green Lantern"]
+print("Step 1:", justice_league)
+
+print("Step 2:", len(justice_league))
+
+justice_league.append("Batgirl")
+justice_league.append("Nightwing")
+print("Step 3:", justice_league)
+
+justice_league.remove("Wonder Woman")
+justice_league.insert(0, "Wonder Woman")
+print("Step 4:", justice_league)
+
+aquaman_index = justice_league.index("Aquaman")
+justice_league.remove("Superman")
+justice_league.insert(aquaman_index + 1, "Superman")
+print("Step 5:", justice_league)
+
+justice_league = ["Cyborg", "Shazam", "Hawkgirl", "Martian Manhunter", "Green Arrow"]
+print("Step 6:", justice_league)
+
+justice_league.sort()
+print("Step 7:", justice_league)
+
+print("New Leader:", justice_league[0])
